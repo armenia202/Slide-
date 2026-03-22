@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="hy">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Աֆրիկայի պատմական քաղաքներ</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&amp;family=Playfair+Display:wght@400;700&amp;family=Noto+Sans+Armenian:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans Armenian', 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #000;
+            overflow: hidden;
+        }
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(66, 33, 11, 0.4); /* Dark brown/orange overlay */
+            z-index: 2;
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem;
+        }
+        .title-text {
+            font-family: 'Playfair Display', 'Noto Sans Armenian', serif;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+        .subtitle-text {
+            font-family: 'Montserrat', 'Noto Sans Armenian', sans-serif;
+            color: #FFD700; /* Gold */
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .accent-line {
+            width: 120px;
+            height: 4px;
+            background-color: #FF8C00; /* Dark Orange */
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+        .decorative-border {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            z-index: 5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Image -->
+<img alt="African Desert Sunset" class="bg-image" src="https://www.genspark.ai/image_placeholder.png" style='content: url("https://page.gensparksite.com/slides_images/c58040f03bf38f3ebdab0e8dbc026dc2.jpg");'/>
+<!-- Dark Overlay for Readability -->
+<div class="overlay"></div>
+<!-- Decorative Border -->
+<div class="decorative-border"></div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<div class="mb-6">
+<p class="subtitle-text text-xl md:text-2xl font-light mb-4 text-yellow-400">
+                    Ճամփորդություն դեպի անցյալ
+                </p>
+</div>
+<h1 class="title-text text-5xl md:text-7xl font-bold mb-8 max-w-5xl leading-tight text-white">
+                Աֆրիկայի պատմական քաղաքներ և ճարտարապետական համալիրներ
+            </h1>
+<div class="accent-line"></div>
+<div class="mt-4 max-w-3xl">
+<p class="text-white text-xl md:text-2xl font-light opacity-90 leading-relaxed">
+                    Ժամանակի շունչը՝ ավազի, ոսկու և մայրամուտի գույների մեջ
+                </p>
+</div>
+<!-- Footer/Presenter Info (Optional) -->
+<div class="absolute bottom-12 text-white opacity-70 text-sm font-light tracking-widest">
+<p>ԶԲՈՍԱՇՐՋԱՅԻՆ ՈՒՂՂՈՒԹՅՈՒՆՆԵՐ • 2026</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
